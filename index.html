@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Rees46</title>
+
+    <!-- Add to homescreen -->
+    <link rel="manifest" href="manifest.json">
+
+    <!-- Fallback to homescreen for Chrome <39 on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Web Starter Kit">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <meta name="theme-color" content="#3372DF">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <!-- Page styles -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.2/normalize.min.css">
+    <link rel="stylesheet" href="styles/kube.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+   
+<div class="container">
+    
+
+
+<header>
+  <section class="nav-bar inner">
+   <div class="units-row units-split end">
+        <div class="unit-50">
+             <h1 class="logo">
+                <a href=""><img src="images/logo.png" alt="">dashboard</a>
+             </h1>
+        </div>
+        <div class="unit-50">
+            <nav class="navbar end right">
+                <ul>
+                    <li><a href="#"></a>
+<!--
+                       <ul>
+                           <li>lml;ml;m</li>
+                           <li>lml;ml;m</li>
+                           <li>lml;ml;m</li>
+                           <li>lml;ml;m</li>
+                       </ul>
+-->
+                    </li>
+                    <li><a href="#">Админка</a></li>
+                    <li><a href="#">Выйти</a></li>
+                </ul>
+            </nav>
+        </div>
+   </div> 
+    </section> 
+</header>      
+ 
+<section class="inner">
+  <div class="chart b-charts">
+   <div class="units-row  end">
+    <div class="unit-40">
+    <div class="chart-doughnut chart-doughnut-descr">
+    <p>Отношения объемов продаж</p>          
+           <hr>
+            <section class="my-charts">                
+             <canvas id="myChart1" width="100" height="100"></canvas>
+             <canvas id="myChart2" width="100" height="100"></canvas>
+             <canvas id="myChart3" width="100" height="100"></canvas>
+             <div class="chart-doughnut-inner-descr">
+                 <p data-sr="wait 1s and then ease-in-out 10px">За день</p>
+                 <p data-sr="wait 1.5s and then ease-in-out 10px">За неделю</p>
+                 <p data-sr="wait 2s and then ease-in-out 10px">За месяц</p>
+             </div>
+            </section>          
+         <span>На графиках отображаются прирост продаж за счёт<br>
+            внедоения модуля Rees46</span>                   
+     </div>
+    </div>
+    <div class="unit-60">
+      <div class="chart-bar">
+       <p>Текущая эффективность</p>
+
+<div class="select-box">
+  <div class="select collapsed">
+    <div class="shown">за 2 недели</div>
+    <div class="option">за 3 недели</div>
+    <div class="option">за 4 недели</div>
+    <div class="option">за полгода</div>
+  </div> 
+</div>
+       <hr>
+       <div class="line-bar">
+        <canvas id="bar" width="567" height="300"></canvas>
+    </div>
+    </div> 
+    </div>
+    
+</div>
+    </div>
+    
+    <div class="chart-explain">
+        <div class="units-row units-split end">
+            <div class="unit-12">
+                <span>&mdash; обычная продажа</span>
+                <span>&mdash; продажа по рекомендациям</span>
+                <span>&mdash; обычная продажа</span>
+            </div>
+            
+        </div>
+    </div>
+
+     <div class="chart chart-ab">
+        <div class="units-row units-split end">
+           <div class="unit-40 border">
+              <div class="chart-doughnut chart-doughnut-descr ab-test">
+                   <p>A/B Тест</p>          
+                   <hr>                    
+                     <div class="select-box">
+                      <div class="select collapsed">
+                        <div class="shown">Статус</div>
+                        <div class="option">за 3 недели</div>
+                        <div class="option">за 4 недели</div>
+                        <div class="option">за полгода</div>
+                      </div> 
+                    </div>
+                    
+                      <div class="slide">
+                          <input type="checkbox" id="check"/>
+                          <label for="check" class="display off">Выключен</label>
+                          <label for="check" class="slider">
+                            <span class="switch"></span>
+                          </label>
+                          <label for="check" class="display on">Включен</label>
+                     </div>
+                     <div class="switch-date">
+                         <p>1 д 23:18</p>
+                     </div>          
+             </div>
+                <div class="unit-100">
+                    <div class="units-row end">
+                       <div class="d-block">
+                        <div class="unit-100">
+                            <div class="chart-doughnut chart-doughnut-descr ab-test ab-test__con">
+                               <p>Конверсия</p>          
+                               <hr>
+                               
+                               <div class="b-persent con">
+                                   <div class="b-persent-normal">
+                                       <span>3.0 <em>%</em></span>
+                                       <span>Стандартная<br> конверсия</span>
+                                   </div>
+                                   <div class="b-present-high">
+                                       <span>3.6 <em>%</em></span>
+                                       <span>достигнуто<br> с Rees46</span>
+                                   </div>
+                               </div>
+                            </div>
+                       
+                       </div> 
+                      </div>
+                    </div>                   
+                </div>
+                
+                 <div class="unit-100">
+                    <div class="units-row end">
+                       <div class="d-block">
+                        <div class="unit-100">
+                            <div class="chart-doughnut chart-doughnut-descr ab-test ab-test__con">
+                               <p>Средний чек</p>          
+                               <hr>
+                               
+                               <div class="b-persent b-persent__money">
+                                   <div class="b-persent-normal">
+                                       <span>1600 <em>руб</em></span>
+                                       <span>Стандартная<br> конверсия</span>
+                                   </div>
+                                   <div class="b-present-high">
+                                       <span>1680 <em>руб</em></span>
+                                       <span>достигнуто<br> с Rees46</span>
+                                   </div>
+                               </div>
+                            </div>
+                       
+                       </div> 
+                      </div>
+                    </div>                   
+                </div>
+                
+                <div class="unit-100">
+                    <div class="units-row end">
+                       <div class="d-block">
+                        <div class="unit-100">
+                            <div class="chart-doughnut chart-doughnut-descr ab-test ab-test__con">
+                               <p>Выручка</p>          
+                               <hr>
+                               
+                               <div class="b-persent b-persent__money b-persent__money-after">
+                                   <div class="b-persent-normal">
+                                       <span>3.6M <em>руб</em></span>
+                                       <span>Стандартная<br> конверсия</span>
+                                   </div>
+                                   <div class="b-present-high">
+                                       <span>3.7M <em>руб</em></span>
+                                       <span>достигнуто<br> с Rees46</span>
+                                   </div>
+                               </div>
+                            </div>
+                       
+                       </div> 
+                      </div>
+                    </div>                   
+                </div>
+                
+                
+          </div>
+        <div class="unit-60 unit-62">
+           <div class="chart-bar">
+                   <p>Список заказов за <span>23 апреля</span></p>
+                    <div class="select-box">
+                      <div class="select collapsed">
+                        <div class="shown">Все заказы</div>
+                        <div class="option">за 3 недели</div>
+                        <div class="option">за 4 недели</div>
+                        <div class="option">за полгода</div>
+                      </div> 
+                    </div>
+                    <hr>
+                    <table>                    
+                    <tr>
+                        <th>ID заказа</th>
+                         <th>Время</th>
+                         <th>ID пользователя</th>
+                         <th>Обычных</th>
+                         <th>Рекомендованных</th>
+                     </tr>         
+                      <tr>
+                         <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>
+                      </tr>   
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr>
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr>
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr> 
+                      <tr>
+                          <td>6597659234</td>
+                         <td>13:48</td>
+                         <td>9873498576</td>
+                         <td>864.56 руб.</td>
+                         <td>9’765.38 руб.</td>   
+                      </tr>                                          
+               </table>
+           </div> 
+        </div>    
+      </div>
+    </div>
+    
+
+
+</section> 
+       
+</div><!-- END container--> 
+<script src="scripts/jquery-1.11.2.min.js"></script>
+<script src="scripts/Chart.js"></script>
+<script src="scripts/scrollReveal.min.js"></script>
+<script src="scripts/main.js"></script>
+
+  </body>
+</html>
